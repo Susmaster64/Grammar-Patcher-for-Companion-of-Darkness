@@ -12,9 +12,9 @@ Everything is handled in the single `main.py` file. And the code is quite unplea
 - 
 ## Requirements
 
-- Python 3.6+
+- Python 3.6+ (The script handles its own dependencies in a python virtual enviroment)
 - Ren'Py script (`script.rpy`)
-- The google sheets spreadsheet downloaded in .xlsx format.
+- The google sheets spreadsheet downloaded in .xlsx format. (Found [here](https://docs.google.com/spreadsheets/d/1AUI3d0eyxFctTFm3ZMzy46EFApaBn7aRnzsJ0gz_dQo/edit?usp=sharing))
 
 ## Usage
 
