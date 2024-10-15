@@ -4,10 +4,10 @@ This program automatically applies proofreading fixes from the google sheets pro
 Everything is handled in the single `main.py` file. And the code is quite unpleasant to look at (read: HORRIBLE). But hey, it works... (Or atleast I think I haven't checked every line of the output but it looks ok?)
 ## Known Issues:
 
-- Some changes, especially in the change suggestions column are not applied
-- Slow (Takes 3-4 minutes to patch once)
-- Menu or lable text *could* be incorrect (Not observed, but possible if two menu texts are on one line)
-- Output is verbose
+- For some reason, the first change on line 8998 is not applied.
+- Slow (Takes 3-4 minutes to patch once).
+- Menu or lable text *could* be incorrect (Not observed, but possible if two menu texts are on one line).
+- Output is (too) verbose.
   
 ## Features
 
