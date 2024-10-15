@@ -1,12 +1,15 @@
 # Companion of Darkness Automatic Grammar Patcher
 
+# CURRENT STATUS: GENERATED SCRIPT CRASHES REN'PY 
+
 This program automatically applies proofreading fixes from the google sheets proofreading spreadsheet to the game's Ren'Py script (`script.rpy`).
 Everything is handled in the single `main.py` file. And the code is quite unpleasant to look at (read: HORRIBLE). But hey, it works... (Or atleast I think I haven't checked every line of the output but it looks ok?)
 ## Known Issues:
 
 - For some reason, the first change on line 8998 is not applied.
+- Quotes are doubled in some places. Which causes syntax errors. These can be avoided by replacing all instances of "" with " (Except for the very first one for "yeeter" easter-egg)
+- Menu indents get broken by this for some reason.
 - Slow (Takes 3-4 minutes to patch once).
-- Menu or lable text *could* be incorrect (Not observed, but possible if two menu texts are on one line).
 - Output is (too) verbose.
   
 ## Features
