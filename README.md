@@ -1,6 +1,7 @@
 # Companion of Darkness Automatic Grammar Patcher
 
 This program automatically applies proofreading fixes from the google sheets proofreading spreadsheet to the game's Ren'Py script (`script.rpy`).
+Everything is handled in the single `main.py` file. And the code is quite unpleasant to look at (read: HORRIBLE). But hey, it works... (Or atleast I think I haven't checked every line of the output but it looks ok?)
 
 ## Features
 
