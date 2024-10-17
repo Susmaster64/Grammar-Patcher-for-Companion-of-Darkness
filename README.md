@@ -1,21 +1,23 @@
 # Companion of Darkness Automatic Grammar Patcher
 
-# CURRENT STATUS: GENERATED SCRIPT CRASHES REN'PY (Manages to run after some manual editing with regex selections in vscode)
+# CURRENT STATUS: GENERATED SCRIPT RUNS UNDER REN'PY. THERE ARE STILL SOME MINOR PROBLEMS.
 
 This program automatically applies proofreading fixes from the google sheets proofreading spreadsheet to the game's Ren'Py script (`script.rpy`).
 Everything is handled in the single `main.py` file. And the code is quite unpleasant to look at (read: HORRIBLE). But hey, it works... (Or atleast I think I haven't checked every line of the output but it looks ok?)
 ## Known Issues:
 
 - For some reason, the first change on line 8998 is not applied.
-- Quotes are doubled in some places. Which causes syntax errors. These can be avoided by replacing all instances of "" with " (Except for the very first one for "yeeter" easter-egg)
-- Does not escape quotes properly inside lines, causing syntax errors.
+- Quotes are doubled in some places. This is probabbly because of the spreadsheet maintainers though.
 - Slow (Takes 3-4 minutes to patch once).
 - Output is (too) verbose.
   
 ## Features
 
 - Automatically creates an enviroment on runtime.
-- Creates a new `modscript.rpy` file containing the updated script.
+- Creates a new `patched_script.rpy` file containing the updated script.
+- Protection against patching certain sections of the script
+- Highlighting for warning messages.
+- Other text parsing (Escaping quotes, etc.). 
 - WIP: Diff mode, get how many lines are changed without changing them.
 - WIP: Advanced modes: Manually configure parameters for patching.
 - 
